@@ -1,0 +1,50 @@
+---This is a test xml file with lot of information ignored 
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:Form109495CTransmittalUpstream
+	xmlns="urn:us:gov:treasury:irs:ext:aca:air:6.2" xmlns:irs="urn:us:gov:treasury:irs:common"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:n1="urn:us:gov:treasury:irs:msg:form1094-1095Ctransmitterupstreammessage"
+	xsi:schemaLocation="urn:us:gov:treasury:irs:msg:form1094-1095Ctransmitterupstreammessage IRS-Form1094-1095CTransmitterUpstreamMessage.xsd">
+	<Form1094CUpstreamDetail recordType="String" lineNum="0">
+		<SubmissionId>1</SubmissionId>
+		<irs:TaxYr>1000</irs:TaxYr>
+		<irs:CorrectedInd>true</irs:CorrectedInd>
+    <!--ignore for test-->
+		<EmployerInformationGrp>
+			<BusinessName>
+				<BusinessNameLine1Txt>#</BusinessNameLine1Txt>
+				<BusinessNameLine2Txt>#</BusinessNameLine2Txt>
+			</BusinessName>
+			<irs:BusinessNameControlTxt>AAA</irs:BusinessNameControlTxt>
+			<irs:TINRequestTypeCd>INDIVIDUAL_TIN</irs:TINRequestTypeCd>
+			<irs:EmployerEIN>000000000</irs:EmployerEIN>
+			<MailingAddressGrp>
+			<USAddressGrp>
+				<AddressLine1Txt>0</AddressLine1Txt>
+				<AddressLine2Txt>0</AddressLine2Txt>
+				<irs:CityNm>A</irs:CityNm>
+				<USStateCd>AL</USStateCd>
+				<irs:USZIPCd>00000</irs:USZIPCd>
+				<irs:USZIPExtensionCd>0000</irs:USZIPExtensionCd>
+			</USAddressGrp>			
+			</MailingAddressGrp>
+			<ContactNameGrp>
+				<irs:PersonFirstNm>String</irs:PersonFirstNm>
+				<irs:PersonMiddleNm>String</irs:PersonMiddleNm>
+				<irs:PersonLastNm>String</irs:PersonLastNm>
+				<irs:SuffixNm>String</irs:SuffixNm>
+			</ContactNameGrp>
+			<ContactPhoneNum>0000000000</ContactPhoneNum>
+		</EmployerInformationGrp>
+		<OtherALEMembersGrp>
+			<BusinessName>
+				<BusinessNameLine1Txt>#</BusinessNameLine1Txt>
+				<BusinessNameLine2Txt>#</BusinessNameLine2Txt>
+			</BusinessName>
+			<irs:BusinessNameControlTxt>&amp;</irs:BusinessNameControlTxt>
+			<irs:TINRequestTypeCd>UNKNOWN</irs:TINRequestTypeCd>
+			<irs:EIN>000000000</irs:EIN>
+		</OtherALEMembersGrp>
+		 <!--ignore for test-->
+	</Form1094CUpstreamDetail>
+</n1:Form109495CTransmittalUpstream>
